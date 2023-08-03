@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9ca24, #f0932b); /* Yellow background gradient */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px; /* Increase the width of the main section */
+  padding: 20px;
+  background-color: #fff9ec; /* Yellow background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.text-center {
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #888888;
+}
+
+.vertical-section {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fef8e6; /* Light yellow background color for vertical sections */
+}
+
+.vertical-section h4 {
+  margin: 0;
+  padding: 10px;
+  background-color: #e67e22; /* Orange background color for section headings */
+  color: #fff; /* White text color for section headings */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.vertical-section p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+/* Adjust spacing between fields */
+.vertical-section p:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* Yellow theme color for h1 and .description remains the same */
+h1, .description {
+  color: #e67e22;
+}
+
+.titleGif{
+  width: 100%;
+  height: auto;
+}

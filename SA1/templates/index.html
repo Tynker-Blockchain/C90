@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Centered Page with Columns</title>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Add Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ '/static/css/style.css' }}" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center">
+      <div class="gif-container">
+        <img src="/static/assets/title.gif" class="titleGif" />
+      </div>
+      <h1>Gas Price Conversion</h1>
+      <div class="description">
+        Current Price of Gas: {{gasPrices['current']}} Wei</div>
+    </div>
+
+    <div class="row justify-content-center pt-5">
+      <div class="col-md-5">
+        <div class="vertical-section">
+          <h4>Gas Price</h4>
+          <p><i class="fas fa-turtle"></i> <span>Current:</span> {{gasPrices['current']}} Wei</p>
+          <p><i class="fas fa-deer"></i> <span>Safe:</span> {{gasPrices['safe']}} Wei</p>
+          <p><i class="fas fa-tachometer-alt-average"></i> <span>Average:</span> {{gasPrices['average']}} gwei</p>
+          <p><i class="fas fa-tachometer-alt-fast"></i> <span>Fast:</span> {{gasPrices['fast']}} Wei</p>
+          <p><i class="fas fa-tachometer-alt"></i> <span>Fastest:</span> {{gasPrices['fastest']}} Wei</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
